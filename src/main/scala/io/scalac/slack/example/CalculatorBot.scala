@@ -8,7 +8,7 @@ class CalculatorBot(override val bus: MessageEventBus) extends AbstractBot {
 
   override def help(channel: String): OutboundMessage =
     OutboundMessage(channel,
-      s"$name will help you to solve difficult math problems \n" +
+      s"$name will help you to solve difficult math problems \\n" +
       "Usage: $calc {operation} {arguments separated by space}")
 
   val possibleOperations = Map(
